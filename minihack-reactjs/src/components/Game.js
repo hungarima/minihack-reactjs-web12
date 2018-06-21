@@ -11,15 +11,19 @@ class Game extends Component {
         <table className="table_score table table-striped">
           <thead className="thead-dark">
             <tr>
+              <th scope="col"></th>
               <th scope="col">{this.props.name.player1}</th>
               <th scope="col">{this.props.name.player2}</th>
               <th scope="col">{this.props.name.player3}</th>
               <th scope="col">{this.props.name.player4}</th>
             </tr>
             <tr>
-              <th scope="col">Sum of Score (<span>sumPlayerScoreTotal</span>)</th>
+              <th scope="col">Sum of Score (<span></span>)</th>
 
-              <th scope="col" className="sum-player-score-{{@index}}"></th>
+              <th scope="col" >0</th>
+              <th scope="col" >0</th>
+              <th scope="col" >0</th>
+              <th scope="col" >0</th>
 
             </tr>
           </thead>
@@ -27,7 +31,7 @@ class Game extends Component {
 
             <tr>
               <th scope="row"> <span>*Sum of score need to be 0!</span></th>
-
+              <td><input data-indexRow="{{@../index}}" data-indexCol="{{@index}}" class="form-control" type="number" value="{{this}}" /></td>
             </tr>
 
           </tbody>
